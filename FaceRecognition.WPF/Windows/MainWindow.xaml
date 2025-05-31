@@ -10,8 +10,7 @@
         WindowStartupLocation="CenterScreen"
         Background="Transparent"
         WindowStyle="None"
-        AllowsTransparency="True"
-        >
+        AllowsTransparency="True"  >
 
     <Border CornerRadius="20">
 
@@ -75,20 +74,12 @@ x:Name="btn_mini"
 
                     <Grid>
 
-                        <Border>
-
                             <Button Content="انتخاب تصویر"
-x:Name="btn_selecImage"  Margin="262,173,454,183" Width="80" Height="80"
+x:Name="btn_selecImage"  Margin="262,173,454,183" Width="80" Height="80" Click="btn_selecImage_Click"
                                     />
-
-                        </Border>
-
-                        <Border>
 
                             <Image x:Name="img_Selected" Grid.Row="1" 
                                    Stretch="Uniform" Height="80" Width="80" Margin="428,178,268,178"/>
-
-                        </Border>
 
                         <Border Margin="296,45,296,245">
 
