@@ -5,7 +5,16 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>ico\user.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ico\close.png" />
+    <None Remove="ico\mini.png" />
+    <None Remove="ico\user.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico\user.ico" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="4.0.0" />
     <PackageReference Include="Microsoft.ML.Vision" Version="4.0.0" />
@@ -17,6 +26,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Windows\" />
+    <Resource Include="ico\close.png" />
+    <Resource Include="ico\mini.png" />
+    <Resource Include="ico\user.ico" />
   </ItemGroup>
 </Project>
