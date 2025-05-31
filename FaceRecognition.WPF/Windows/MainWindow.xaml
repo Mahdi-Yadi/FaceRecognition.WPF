@@ -20,16 +20,16 @@
 
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="AntiqueWhite" Offset="0"/>
-                    <GradientStop Color="Chartreuse" Offset="0.5"/>
-                    <GradientStop Color="Azure" Offset="1"/>
+                    <GradientStop Color="#6D2FFF" Offset="0"/>
+                    <GradientStop Color="#FB539B" Offset="0.5"/>
+                    <GradientStop Color="#836EFB" Offset="1"/>
                 </LinearGradientBrush>
             </Border.BorderBrush>
 
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Color="DarkCyan" Offset="1"/>
-                    <GradientStop Color="Azure" Offset="1"/>
+                    <GradientStop Color="#0A003A" Offset="1"/>
+                    <GradientStop Color="#1C0E49" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
 
@@ -40,8 +40,8 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Border Background="BurlyWood"
-                        BorderThickness="1" CornerRadius="10"
+                <Border Background="#252525"
+                        BorderThickness="1" CornerRadius="10" Margin="10,10,10,426" Grid.RowSpan="2"
                         >
 
                     <Grid>
@@ -70,26 +70,28 @@ x:Name="btn_mini"
 
                 </Border>
 
-                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Row="1">
+                <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Hidden" Grid.Row="1">
 
                     <Grid>
 
-                            <Button Content="انتخاب تصویر"
-x:Name="btn_selecImage"  Margin="262,173,454,183" Width="80" Height="80" Click="btn_selecImage_Click"
+                            <Button Content="انتخاب تصویر" Foreground="#9497CD" Background="#281269"
+x:Name="btn_selecImage"  Margin="262,173,454,183" Width="80" Height="70" Click="btn_selecImage_Click"
                                     />
 
                             <Image x:Name="img_Selected" Grid.Row="1" 
-                                   Stretch="Uniform" Height="80" Width="80" Margin="428,178,268,178"/>
+                                   Stretch="Uniform" Height="100" Width="100" Margin="428,178,268,178"/>
 
                         <Border Margin="296,45,296,245">
 
                             <Label x:Name="lbl_Result" 
-                                   Content="نتیجه" Grid.Row="2" FontFamily="B Nazanin"
+                                   Content="نتیجه" Grid.Row="2" FontFamily="B Nazanin" Foreground="Snow"
                                    FontSize="30" FontStyle="Normal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,41,0,0"
                                    />
                             
                         </Border>
-                        
+
+                        <Label Content="Mahdi Yadi" Foreground="#7c80c2" FontSize="30" FontFamily="Monotype Corsiva" Margin="340,0,302,411"/>
+
                     </Grid>
                     
                 </ScrollViewer>
